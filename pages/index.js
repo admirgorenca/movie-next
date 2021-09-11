@@ -80,6 +80,6 @@ export async function getStaticProps(context) {
       thriller: JSON.parse(JSON.stringify(await asyncGetCategory("Thriller"))),
       aventurë: JSON.parse(JSON.stringify(await asyncGetCategory("Aventurë"))),
     },
-    // revalidate: 82800,
+    revalidate: 82800,
   };
 }
